@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react'
+import MainPage from './pages/mainpage' 
+// import RequestURL from './main-functions'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id = 'html'>
+
+
+        <div id='header'>
+          <div id= 'searchBarDiv'>
+              <input id= 'searchfield'type="text" name="SearchBar" placeholder='Enter your request'/>
+              <button id = 'searchbtn'>Search</button>
+          </div>        
+        </div>      
+        <MainPage/>
     </div>
   );
 }
